@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexalogin sign-up interface demo.">
+  <title>Nexalogin | Sign Up Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="signup.js" defer></script>
+</head>
+<body>
+  <main class="page-container">
+    <section class="login-card">
+      <div class="brand"><div class="brand-logo" aria-hidden="true">N</div><span>Nexalogin</span><span class="demo-tag">DEMO</span></div>
+      <div class="demo-notice" role="note">Educational interface only. This page does not create accounts or store/send personal information. Do not use real credentials.</div>
+      <div class="heading"><h1>Create account</h1><p>Preview the sign-up form layout.</p></div>
+      <form id="signupForm" novalidate>
+        <div class="form-group"><label for="name">Display name</label><input id="name" name="name" type="text" placeholder="Demo User" autocomplete="off" required></div>
+        <div class="form-group"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="demo@example.com" autocomplete="off" required></div>
+        <div class="form-group"><label for="password">Demo password</label><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required></div>
+        <button class="login-btn" type="submit">Test sign-up form</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+      <p class="signup-text"><a href="index.html">Back to sign in demo</a></p>
+      <footer>© 2026 Nexalogin. Educational demo only.</footer>
+    </section>
+  </main>
+</body>
+</html>

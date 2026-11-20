@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexalogin demo — a modern, front-end-only sign-in interface.">
+  <meta name="robots" content="index,follow">
+  <title>Nexalogin | Sign In Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-container">
+    <section class="login-card" aria-labelledby="page-title">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">N</div>
+        <span>Nexalogin</span>
+        <span class="demo-tag">DEMO</span>
+      </div>
+
+      <div class="demo-notice" role="note">
+        Demo project only. This page does not create accounts or send/store passwords.
+        Do not enter a real password.
+      </div>
+
+      <div class="heading">
+        <h1 id="page-title">Welcome back!</h1>
+        <p>Try the front-end form validation demo.</p>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="demo@example.com"
+                 autocomplete="off" inputmode="email" required>
+        </div>
+
+        <div class="form-group">
+          <div class="password-heading">
+            <label for="password">Demo password</label>
+            <a href="forget-password.html">Forgot password?</a>
+          </div>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password"
+                   placeholder="Enter at least 8 characters"
+                   autocomplete="new-password" required minlength="8">
+            <button type="button" id="togglePassword"
+                    aria-label="Show demo password" aria-pressed="false">Show</button>
+          </div>
+        </div>
+
+        <div class="remember-row">
+          <label for="remember">
+            <input type="checkbox" id="remember" name="remember">
+            <span>Remember me (visual demo only)</span>
+          </label>
+        </div>
+
+        <button type="submit" class="login-btn">Test sign in form</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+
+      <div class="divider"><span>OR</span></div>
+      <button type="button" class="google-btn" id="googleDemo">
+        <span class="google-icon" aria-hidden="true">G</span>
+        Google sign-in (not connected)
+      </button>
+
+      <p class="signup-text">
+        New to Nexalogin? <a href="signup.html">View sign-up demo</a>
+      </p>
+      <footer>© 2026 Nexalogin. Educational demo only.</footer>
+    </section>
+  </main>
+</body>
+</html>
